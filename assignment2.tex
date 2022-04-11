@@ -1,0 +1,31 @@
+\documentclass[twocolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\title{Assignment 2}
+\author{Gollapudi Sasank CS21BTECH11019}
+
+\begin{document}
+\maketitle
+\section*{Question : }
+Without expanding at any stage , find the value of : 
+\begin{align}
+\mydet{a & b & c \\ a+2x & b+2y & c+2z \\ x & y & z \\}
+\end{align}
+\section*{Solution :}
+Let the given Determinant be
+\begin{align}
+M = \mydet{a & b & c \\ a+2x & b+2y & c+2z \\ x & y & z \\}
+\end{align}
+First we use Row operation on $R_2$ , $ R_2 \rightarrow R_2 - 2R_3 $
+\begin{align}
+\Rightarrow M &=  \mydet{a & b & c \\ a & b & c \\ x & y & z \\} 
+\end{align}
+Clearly from (3) in Determinant M , $R_1$ and $R_2$ are identical  
+\begin{align} 
+\therefore M &= \mydet{a & b & c\\ a+2x & b+2y & c+2z \\ x & y & z \\} &= 0  
+\end{align}
+\end{document}
